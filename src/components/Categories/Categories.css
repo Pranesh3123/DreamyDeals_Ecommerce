@@ -1,0 +1,43 @@
+.categories {
+  margin-top: 5%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  gap: 0 ;
+}
+
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cbtn {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:black;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.imgc {
+  width: 90%;
+  max-height: 80%;
+  object-fit: cover;
+}

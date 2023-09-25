@@ -1,0 +1,51 @@
+.footer{
+    margin-top: 0%;
+    margin: 100px 20px 20px 20px;
+    gap: 100px;
+}
+
+.top{
+ display: flex;
+ gap: 100px;
+}
+
+.items{
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+ text-align: justify;
+ font-size: 14px;
+}
+
+h1{
+    font-size: 18px;
+    font-weight: 500;
+    color: gray;
+}
+
+.bottom{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+ 
+.copyrights{
+  display: inline;
+  margin-right: 50%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 15px;
+}
+
+.payment{
+    max-width: 100%;
+    max-height: 100%;
+}
+.logo1{
+    max-width: 100%;
+    max-height: 100%;
+
+}

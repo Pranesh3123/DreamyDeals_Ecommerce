@@ -1,0 +1,45 @@
+.slider-container {
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    animation: slide 100s infinite linear;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    padding: 0 5px;
+  }
+  
+  img {
+    margin-left: 0.1%;
+    width: 62%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border-radius: 5px;
+  }
+  .rightimg{
+    position: absolute;
+    top: 0;
+    right: 32px;
+    width: 35%;
+  }
+
+  .rightdown{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    bottom: 200px;
+    left: 62.5%;
+    width: 29.5%;
+    height: 200px;
+  }
+ 

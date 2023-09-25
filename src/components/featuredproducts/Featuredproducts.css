@@ -1,0 +1,30 @@
+.featuredproducts{
+    margin-bottom: 100px;
+}
+
+.top{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   text-align: justify;
+}
+    
+h1{
+    flex:1;
+    margin-left: 9%; 
+    text-transform: capitalize;
+    font-size: 20px;
+    color: black;
+}
+
+p{
+    flex: 3;
+    font-family:'Times New Roman', Times, serif;
+    justify-content: center;
+}
+
+.bottom{
+ display: flex;
+ justify-content: center;
+ gap:50px;
+}
