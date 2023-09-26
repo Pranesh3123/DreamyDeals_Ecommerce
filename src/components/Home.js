@@ -6,6 +6,7 @@ import Contact from '../components/contact/Contact';
 import FeaturedProducts from '../components/featuredproducts/FeaturedProducts';
 import Imagepass from '../components/imagepass/Imagepass';
 import Products from './products/Products';
+import Slider from 'react-slick';
 
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <Contact/>
       <Footer/>
       <Products/>
+      <Slider/>
     </div>
   )
 }
