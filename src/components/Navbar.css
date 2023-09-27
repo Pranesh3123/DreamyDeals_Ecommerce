@@ -4,7 +4,8 @@
 }
 
 .logo{
-    width: 15%;
+    max-width: 20%;
+    max-height: 100px;
 }
 
 /* Navbar */
@@ -15,32 +16,25 @@
     align-items: center;
     margin-top: 0.1%;
     border-radius: 0px 0px 10px 10px;
-    background-color:lightslategrey;
+    background-color: #333;
 
+}
+.nleft{
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+ 
+
+}
+
+.op{
+    color: aliceblue;
 }
 
 .logo{
+    display: flex;
     align-items: center;
-    display: flex;
-    padding-left: 10px;
-}
-
-.search-bar{
-    width: 30%;
-    height: 25px;
-    border: 2px solid black;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 20px;
-}
-
-.search-bar > input{
-    width: 90%;
-    background: transparent;
-    outline: transparent;
-    border:transparent;
-    font-size:  16px;
-    padding-left: 7px;
+    padding:0 30px 0 0;
 }
 
 .icon{
@@ -66,6 +60,7 @@
 .img{
      width: 25px;
      height: 50%;
+     background-color: aliceblue;
 }
 
 .count{
@@ -75,11 +70,10 @@
 }
 
 .light{
-    text-decoration: none;
-    display: inline;
-    padding: 5px;
-    transition: all 0.3s;
-    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: aliceblue;
 }
 
 .light:hover{
