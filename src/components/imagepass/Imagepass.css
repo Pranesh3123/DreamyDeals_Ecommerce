@@ -1,6 +1,6 @@
 .slider-container {
     margin-top: 10px;
-    width: 100%;
+    width: 110%;
     position: relative;
     overflow: hidden;
   }
@@ -28,8 +28,8 @@
   .rightimg{
     position: absolute;
     top: 0;
-    right: 32px;
-    width: 35%;
+    right: 130px;
+    width: 28%;
   }
 
   .rightdown{
@@ -37,9 +37,9 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    bottom: 200px;
-    left: 62.5%;
-    width: 29.5%;
-    height: 200px;
+    bottom: 270px;
+    left: 870px;
+    width: 370px;
+    height: 150px;
   }
  

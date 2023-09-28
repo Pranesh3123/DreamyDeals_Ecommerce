@@ -28,15 +28,15 @@ const Footer = () => {
             <div className='items'>
                 <h1>Content</h1>
                 <span>
-                Explore a wide range of top-tier electronic products in our ecommerce store. 
+                Explore a wide range of top-tier electronic products in our DreamyDeals store. 
                 From state-of-the-art, we offer unbeatable deals and swift shipping. 
                 Elevate your tech lifestyle today!.
                 </span>
             </div>
         </div>
         <div className='bottom'>
-             <img  className='logo' src={Logo} alt='logo'/><h1 className='copyrights'>© copyrights 2023.All Rights Reserved</h1>
-            <img  className='logo' src={payment} alt='payment'></img>
+             <img  className='flogo' src={Logo} alt='logo'/><h1 className='copyrights'>© copyrights 2023.All Rights Reserved</h1>
+            <img  className='flogo' src={payment} alt='payment'></img>
         </div>
     </div>
   )

@@ -4,8 +4,10 @@ import './Navbar.css'
 const Search = () => {
   return (
     <div className='search-bar'>
-        <input type='text' placeholder='search'/>
+        <input  className='stxt' type='text' placeholder='search'/>
+        <button className='sbut'>
         <img  className='icon' src={Searchicon} alt='icon'/>
+        </button>
     </div>
   )
 }

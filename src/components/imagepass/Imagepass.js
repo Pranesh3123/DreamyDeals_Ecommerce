@@ -38,7 +38,7 @@ const Imagepass = () => {
                     </div>
                 ))}
             </div>
-            <div>
+            <div >
                 <img className='rightimg' src={Smartwatch} alt='watch'></img>
             </div>
             <div className='rightdown'>

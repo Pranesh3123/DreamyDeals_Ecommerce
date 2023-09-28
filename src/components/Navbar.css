@@ -3,40 +3,51 @@
     box-sizing: border-box;
 }
 
-.logo{
-    max-width: 20%;
-    max-height: 100px;
-}
-
-/* Navbar */
 .nav-container{
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 0.1%;
     border-radius: 0px 0px 10px 10px;
     background-color: #333;
-
 }
+
+.flag{
+    max-width: 50px;
+    margin-left: 10px;
+    max-height: 50px;
+}
+
 .nleft{
     display: flex;
-    gap: 20px;
+    position: absolute;
+    gap: 15px;
     padding: 40px;
- 
-
+    margin-left: 70px;
 }
 
 .op{
     color: aliceblue;
+    text-decoration-line: none;
 }
 
 .logo{
     display: flex;
+    display: absolute;
     align-items: center;
     padding:0 30px 0 0;
+    width:200px;
+    margin-right: 160px;
 }
 
+.flag1{
+    display: absolute;
+    font-size: 10px;
+    color: white;
+    padding-top:20px;
+    margin-left: 2px;
+}
 .icon{
     width: 15%;
     height: 100%;
@@ -50,7 +61,7 @@
    padding-right: 10px;
 }
 
-.navbar> ul{
+.navbar{
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -60,19 +71,16 @@
 .img{
      width: 25px;
      height: 50%;
-     background-color: aliceblue;
 }
 
 .count{
-    border-radius: 50%;
-    background-color: blue;
-    position: absolute;
+    display: flex;
 }
 
 .light{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     color: aliceblue;
 }
 
@@ -82,8 +90,44 @@
     box-shadow: black;
     color:whitesmoke;
 }
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.stxt{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid;
+    background-color: #333;
+    color: aliceblue;
+    border-radius: 4px;
+    margin-right: 8px;
+    width: 170px;
+    height: 30px;
+  }
+
+  .sbut{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    margin-left: 10%;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .icon {
+    width: 20px; 
+    height: 20px; 
+    fill: #fff;
+  }
   
-  
+  .sbut:hover {
+    background-color:gainsboro;
+  }
   
   
   

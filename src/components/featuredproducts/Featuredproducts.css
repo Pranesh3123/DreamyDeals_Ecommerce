@@ -1,5 +1,8 @@
 .featuredproducts{
-    margin-bottom: 100px;
+    display: absolute;
+    padding-bottom: 5%;
+    background-color: white;
+    box-shadow: 50px;
 }
 
 .top{
