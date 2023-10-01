@@ -8,7 +8,6 @@ import Imagepass from '../components/imagepass/Imagepass';
 import Products from './products/Products';
 import Slider from 'react-slick';
 
-
 const Home = () => {
   return (
     <div>

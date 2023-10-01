@@ -29,22 +29,16 @@ const Products = () => {
                | Quick Dry Polo Mesh
             </p>
             <div className='quantity'>
-              <button className='but' onClick={()=>setQuantity(prev=>prev === 1 ? 1 : prev-1)}>-</button>
+              <button className='but' onClick={()=>setQuantity(prev=>prev === 1 ? 1 : prev-1)}><h1>-</h1></button>
               {quantity}
-              <button className='but' onClick={()=>setQuantity(prev=>prev+1)}>+</button>
+              <button className='but' onClick={()=>setQuantity(prev=>prev+1)}><h1>+</h1></button>
             </div>
             <button className='add'>
                 <img  className='add'src={Addcard} alt='add'/>ADD TO CART
             </button>
             <div className='link'>
-                <div className='item'>
-                <img src={Wishlist} alt='wishlist'/>
-                ADD TO WISHLIST
-                </div> 
-                <div className='item'> 
-                <img src={Compare} alt='wishlist'/>
-                ADD TO COMPARE
-                </div>    
+                <img src={Wishlist} alt='wishlist'/> ADD TO WISHLIST
+                <img src={Compare} alt='wishlist'/> ADD TO COMPARE
             </div>
             <div className='info'>
                 <span>Vendor: AVANT</span>

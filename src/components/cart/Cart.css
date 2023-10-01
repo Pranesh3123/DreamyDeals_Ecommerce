@@ -1,0 +1,100 @@
+.cart{
+    position: absolute;
+    right: 20px;
+    top: 51px;
+    z-index: 999;
+    background-color: white;
+    padding: 20px;
+    -webkit-box-shodow:0px 0px 7px -5px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 7px -5px rgba(0,0,0,0.5);
+    height: 450px;
+    overflow-y: auto;
+}
+
+.name{
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.pname{
+    display: table-row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.cimg{
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.desc{
+    position: absolute;
+    color: gray;
+    margin-top: 30px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.cprice{
+    color: blue;
+    font-size: 14px;
+    margin-top: 90px;
+    padding-right: 30px;
+}
+
+.delete{
+    position: absolute;
+    cursor: pointer;
+    width: 23px;
+    padding-top: 120px;
+    margin-left: 250px;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.cbut{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    background-color: blue;
+    border-radius: 30px;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.rest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    top: 10px;
+    background-color: red;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}

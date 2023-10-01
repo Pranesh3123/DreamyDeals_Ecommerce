@@ -14,7 +14,7 @@
 }
 
 .flag{
-    max-width: 50px;
+    max-width: 25px;
     margin-left: 10px;
     max-height: 50px;
 }
@@ -45,7 +45,7 @@
     display: absolute;
     font-size: 10px;
     color: white;
-    padding-top:20px;
+    padding-top:10px;
     margin-left: 2px;
 }
 .icon{
@@ -129,6 +129,17 @@
     background-color:gainsboro;
   }
   
+.count{
+    position: absolute;
+    right: 35px;
+    top: 10px;
+    font-size: 14px;
+    background-color: red;
+    border-radius: 25px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+}
   
   
   
