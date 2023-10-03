@@ -5,7 +5,7 @@ import List from '../list/List'
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Navbar from '../Navbar'
-import Footer from '../Footer'
+import Footer from '../footer/Footer'
 import Contact from '../contact/Contact'
 
 const Productcategories = () => {
@@ -14,7 +14,7 @@ const Productcategories = () => {
     const [sort,setSort]=useState(null)
   return (
 <div className='product'>
-        <Navbar/>
+    <Navbar/>
     <div className='products'>
         <div className='left'>
             <div className='filteritem'>

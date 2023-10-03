@@ -1,6 +1,6 @@
 import React from 'react'
-import payment from '../image/payment.png';
-import Logo from '../image/Dreamydeals-logos_black.png'
+import payment from '../footer/payment.png'
+import Logo from '../footer/Dreamydeals-logos_black.png'
 import './Footer.css'
 const Footer = () => {
   return (
@@ -10,12 +10,13 @@ const Footer = () => {
              <h1>Categories</h1>
              <span>New Arrivals</span>
              <span>Accessories</span>
-
+             <span>Stores</span>
             </div>
             <div className='items'>
              <h1>Links</h1>
              <span>FAQ</span>
              <span>Pages</span>
+             <span>Sponser</span>
             </div>
             <div className='items'>
                 <h1>About</h1>
@@ -34,7 +35,7 @@ const Footer = () => {
                 </span>
             </div>
         </div>
-        <div className='bottom'>
+        <div className='fbottom'>
              <img  className='flogo' src={Logo} alt='logo'/><h1 className='copyrights'>© copyrights 2023.All Rights Reserved</h1>
             <img  className='flogo' src={payment} alt='payment'></img>
         </div>
