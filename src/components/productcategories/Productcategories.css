@@ -20,13 +20,13 @@
    margin-top: 10px;
 }
 .right{
-    flex:3;
+    flex:2;
     margin-left: 5%;
 }
 
 .catImg{
     width: 100px;
-    height: 100%;
+    height: 100px;
     object-fit: cover;
     margin-bottom: 50px;
 }
@@ -34,25 +34,3 @@
 .container{
     display: inline-block;
 }
-.slogan{
-    position: absolute;
-    margin-left: 45%;
-    top: 12%;
-    font-size: 3em;
-    letter-spacing: 2px;
-    font-family:monospace;
-    border-right: 2px solid;
-    width: 24%;
-    white-space: nowrap;
-    animation:typewriter 3s steps(1)  infinite  ;
-    overflow: hidden;
-}
-
-@keyframes typewriter {
-    from{
-      width: 0; /* Start with no width (text hidden) */
-    }
-    to{
-      width: 50%; /* Fully reveal the text */
-    }
-  }

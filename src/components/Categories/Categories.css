@@ -1,14 +1,31 @@
 .categories {
-  margin-top: 5%;
+  margin-top: 50%;
   margin-left: 5%;
   display: flex;
   justify-content: space-between;
   width: 95%;
-  gap: 0 ;
+  gap: 10px;
 }
 
+.head{
+  position: absolute;
+  margin-left:33%; 
+  text-transform: capitalize;
+  font-size: 30px;
+  color:gray;
+}
+.head1
+{
+  position: absolute;
+  margin-top: 3%;
+  margin-left:25%; 
+  text-transform: capitalize;
+  font-size: 18px;
+  color:black;
+}
 .col {
   flex: 1;
+  margin-top: 6%;
   display: flex;
   flex-direction: column;
 }
@@ -20,21 +37,61 @@
   gap: 10px;
 }
 
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 80%;
+  background: rgba(0, 0, 0, 0);
+  transition: 0.5s ease;
+}
+
+.categories:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, .3);
+}
+
+.titlep {
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  right: 36%;
+  width: 35%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  font-size: 30px;
+  outline: 2px solid white;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease; 
+}
+
+.row:hover .titlep {
+  top: 10%;
+}
+
 .cbtn {
   position: absolute;
   top: 40%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color:black;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
+  left: 38%;
   cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
+  opacity: 0;
 }
+
+.cbt{
+  border: 5px  solid white;
+  border-radius: 3px;
+  color: black;
+  cursor: pointer;
+}
+
+.row:hover .cbtn {
+  background-color:transparent;
+  opacity: 1;
+}
+
 
 .imgc {
   width: 90%;

@@ -5,7 +5,7 @@ import Sys from '../featuredproducts/Productsimages/color_back_green__buxxfjccqj
 import Sys1 from '../featuredproducts/Productsimages/color_front_green__eb8qbnemmre6_large_2x.jpeg'
 import Ipad from '../featuredproducts/Productsimages/ipadpro11-digitalmat-gallery-1-202210.png'
 import Ipad1 from '../featuredproducts/Productsimages/ipadpro11-digitalmat-gallery-3-202210.png'
-import Delete from './trash-sharp.svg'
+import Delete from './delete.svg'
 import './Cart.css'
 
 const Cart = () => {
@@ -44,7 +44,7 @@ const Cart = () => {
 ];
   return (
     <div className='cart'>
-        <h1 className='name'>Products in your Cart</h1>
+        <h1 className='name'>PRODUCTS IN YOUR CART</h1>
         {data?.map(item =>(
           <div className='item' key={item.id}>
           <img  className='cimg' src={item.img} alt='cart' />

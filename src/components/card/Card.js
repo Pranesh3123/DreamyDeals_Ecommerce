@@ -5,7 +5,7 @@ const Card = ({ item }) => {
   return (
       <div className='card'>
         <div className='image'>
-          {item.isNew && <span className='new'>New Arrival</span>}
+          {item.isNew && <button className='new'>New Arrival</button>}
           <img src={item.img} alt={item.title} className='firstimg' />
           <img src={item.img1} alt={item.title} className='secondimg' />
         </div>

@@ -5,11 +5,16 @@ import Shoes1 from './Productsimg/71ZUFbHzXVL._UY695_.jpeg'
 import Addcard from './Productsimg/cart-outline.svg'
 import Wishlist from './Productsimg/heart-circle-outline.png'
 import Compare from './Productsimg/git-compare-outline.png'
+import Navbar from '../Navbar'
+import Contact from '../contact/Contact'
+import Footer from '../footer/Footer'
 const Products = () => {
     const [selectedimg,setSelectedimg]=useState(0)
     const [quantity,setQuantity]=useState(1);
     const images = [Shoes,Shoes1];
   return (
+    <div className='product'>
+      <Navbar/>
     <div className='products'>
         <div className='pleft'>
             <div className='pimag'>
@@ -55,6 +60,9 @@ const Products = () => {
             </div>
         </div>
     </div>
+    <Contact/>
+    <Footer/>
+  </div>  
   )
 }
 

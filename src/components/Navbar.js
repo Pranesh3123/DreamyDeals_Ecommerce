@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="navbar">
             <div  className='light'>
                 <Link className='op' to='/'>Home</Link>
-                <Link className='op' to='Footer.js'>About</Link>
+                <Link className='op' to='Footer'>About</Link>
                 <Link className='op' to=''>Contact</Link>
                 <Link className='op' to=''>Stores</Link>
               <img  className='img' src={Fav} alt='fav'/>

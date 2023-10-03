@@ -1,0 +1,90 @@
+.productslider{
+  position: relative;
+  max-width: 100%;
+  height: 800px;
+  padding: 2px;
+  margin-top: 10%;
+  padding-left: 20%;
+  padding-right: 28%;
+}
+
+.ptitl{
+  font-size: 30px;
+  color: gray;
+  margin-left: 43%;
+}
+
+.pslider{
+  max-height: 600px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 50px;
+}
+.cardp {
+  width: 100%;
+  max-height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.tilp{
+  margin-top: 5%;
+  font-size: 20px;
+  color: #000;
+
+}
+
+.carsousel{
+  width: 100%;
+}
+.product--image {
+  margin-top: 5%;
+  width: 100%;
+  max-height: 250px;
+  margin-left: 1%;
+  object-fit: cover;
+}
+
+.cardp {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 320px;
+  margin: auto 1rem;
+  text-align: center;
+  font-family: arial;
+}
+
+.pricep {
+  color: green;
+  font-size: 18px;
+  margin-top: 5%;
+}
+
+.pricep1{
+  color: red;
+  font-size: 18px;
+  margin-top: 5%;
+  text-decoration: line-through;
+}
+
+.prip{
+  margin-top: 5%;
+  margin-bottom: 10%;
+  font-size: 12px;
+  justify-content: space-between;
+  color: gray;
+}
+
+.butp {
+  border: none;
+  padding: 10px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  object-fit: cover;
+  margin-bottom: 10%;
+}

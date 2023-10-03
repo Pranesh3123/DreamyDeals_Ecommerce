@@ -1,7 +1,8 @@
 .featuredproducts{
-    display: absolute;
-    padding-bottom: 5%;
+    position: absolute;
+    top: 110%;
     background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     box-shadow: 50px;
 }
 
@@ -10,13 +11,17 @@
    align-items: center;
    justify-content: space-between;
    text-align: justify;
+   margin-right: 30px;
 }
     
-h1{
+.titlef{
     flex:1;
-    margin-left: 9%; 
+    margin-left:45%; 
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 30px;
+}
+.titlp{
+    padding-left: 37%;
     color: black;
 }
 
@@ -29,5 +34,9 @@ p{
 .bottom{
  display: flex;
  justify-content: center;
+ flex-wrap: wrap;
+ margin-top: 3%;
+ margin-left: 10px;
+ margin-right: 10px;
  gap:50px;
 }
