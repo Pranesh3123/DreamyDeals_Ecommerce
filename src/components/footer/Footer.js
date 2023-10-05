@@ -4,7 +4,7 @@ import Logo from '../footer/Dreamydeals-logos_black.png'
 import './Footer.css'
 const Footer = () => {
   return (
-    <div className='footer'>
+    <div className='footer' id='Footer'>
         <div className='top'>
             <div className='items'>
              <h1>Categories</h1>

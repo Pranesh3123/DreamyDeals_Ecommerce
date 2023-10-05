@@ -1,4 +1,3 @@
-import React from 'react'
 import Watch from './03_f7453fd7-db93-42f7-9cc7-0604b836273c_2048x.jpeg'
 import Watch1 from './04_369a1132-57b8-4087-81c2-2939586afca7_2048x.jpeg'
 import Sys from '../featuredproducts/Productsimages/color_back_green__buxxfjccqjzm_large_2x.jpeg'

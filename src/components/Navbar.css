@@ -4,13 +4,16 @@
 }
 
 .nav-container{
+    width: 100%;
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0.1%;
+    top: 0;
     border-radius: 0px 0px 10px 10px;
     background-color: #333;
+    position: fixed;
+    z-index: 1;
 }
 
 .flag{
@@ -91,43 +94,7 @@
     color:whitesmoke;
 }
 
-.search-bar{
-    display: flex;
-    align-items: center;
-    padding-left: 5%;
-}
 
-.stxt{
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid;
-    background-color: #333;
-    color: aliceblue;
-    border-radius: 4px;
-    margin-right: 8px;
-    width: 170px;
-    height: 30px;
-  }
-
-  .sbut{
-    position: absolute;
-    width: 40px;
-    height: 28px;
-    margin-left: 10%;
-    background-color: #333;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  .icon {
-    width: 20px; 
-    height: 20px; 
-    fill: #fff;
-  }
-  
-  .sbut:hover {
-    background-color:gainsboro;
-  }
   
 .count{
     position: absolute;

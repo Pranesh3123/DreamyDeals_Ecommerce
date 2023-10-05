@@ -8,10 +8,15 @@ import Compare from './Productsimg/git-compare-outline.png'
 import Navbar from '../Navbar'
 import Contact from '../contact/Contact'
 import Footer from '../footer/Footer'
+import { useEffect } from 'react'
 const Products = () => {
     const [selectedimg,setSelectedimg]=useState(0)
     const [quantity,setQuantity]=useState(1);
     const images = [Shoes,Shoes1];
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  })
   return (
     <div className='product'>
       <Navbar/>

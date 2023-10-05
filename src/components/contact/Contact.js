@@ -7,7 +7,7 @@ import Mail from './contactimages/mail-open-outline.png';
 import './Contact.css'
 const Contact = () => {
   return (
-    <div className='contact'>
+    <div className='contact' id='Contact'>
       <div className='wrapper'>
         <span>BE IN TOUCH WITH US:</span>
         <div className='mail'>

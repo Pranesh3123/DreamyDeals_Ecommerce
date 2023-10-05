@@ -1,6 +1,6 @@
 import React from 'react'
 import Searchicon from './../image/search.svg';
-import './Navbar.css'
+
 const Search = () => {
   return (
     <div className='search-bar'>

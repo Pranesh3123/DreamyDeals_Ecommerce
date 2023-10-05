@@ -33,7 +33,7 @@
 }
 
 .cimg{
-    max-width: 100px;
+    width: 500%;
     max-height: 150px;
     object-fit: cover;
 }
