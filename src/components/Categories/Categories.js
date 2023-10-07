@@ -14,7 +14,7 @@ export const Categories = () => {
     navigate('/productcategories');
   };
   return (
-    <div className='categories' id='cat'>
+    <div className='categories' id='Product'>
       <div className='head'>AVAILABLE PRODUCTS</div>
       <div className='head1'>Stay connected, stay ahead. Explore our world of electronic innovation</div>
     <div className='col'>

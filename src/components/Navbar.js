@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { UseSelector, useSelector } from 'react-redux';
 import Flag from '../image/india-61-692112.png'
 import Carts from '../image/cart (1).svg'
 import User from '../image/user.svg'
@@ -13,7 +14,9 @@ import { useEffect } from 'react'
 const Navbar = () => {
 
   const[Open,setOpen]=useState(false)
-
+  
+  const count=useSelector(state=>state.cartState.count);
+  const data=useSelector(state=>state.cartState.items);
   const togglecart =  () =>{
     setOpen(!Open);
   }
@@ -30,10 +33,11 @@ const Navbar = () => {
       <img  className='flag' src={Flag} alt='flag'/>
       <p className='flag1'>IND</p>
           <div className='nleft'>
-           <Link className='op' to='.products/1'>Mobiles</Link>
-           <Link className='op' to='.products/2'>watches</Link>
-           <Link className='op' to='.products/3'>Cameras</Link>
-           <Link className='op'to='.products/4'>others</Link>
+           <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>MOBILE</Link>
+           <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>WATCH</Link>
+           <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>CAMERA</Link>
+           <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>TWS</Link>
+           <Link className='op' to='Product'spy={true} smooth={true} offset={100} duration={500}>EV</Link>
           </div>
           <img className='logo' src={Logo} alt='logo'/>
         <div className="navbar">
@@ -45,7 +49,7 @@ const Navbar = () => {
               <img  className='img' src={Fav} alt='fav'/>
               <img  className='img'  src={User} alt='User'/>
               <div className='carticon' onClick={togglecart}>
-              <img  className='img' src={Carts} alt='cart'/><span className='count'>0</span>
+              <img  className='img' src={Carts} alt='cart'/><span className='count'>{count}</span>
               </div>
             </div>
          </div>

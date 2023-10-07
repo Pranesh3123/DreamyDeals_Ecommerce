@@ -10,6 +10,7 @@
     font-size: 15px;
     border-style:solid ;
     border-radius: 5px;
+    height: 400px;
 }
 
 .inputitem{
@@ -34,4 +35,5 @@
 
 .container{
     display: inline-block;
+
 }

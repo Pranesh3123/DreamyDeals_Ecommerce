@@ -7,8 +7,8 @@ import ProductDate from './ProductDate';
 import { useNavigate } from 'react-router-dom'
 const ProductSlider = () => {
   const navigate = useNavigate();
-  const handleClick =()=>{
-    navigate('/Products');
+  const handleClick =(items)=>{
+    navigate('/Products',{state:{items:items}});
   };
   const responsive = {
     superLargeDesktop: {
@@ -33,9 +33,12 @@ const ProductSlider = () => {
       <div className='ptitl'>
         Find The Deals
       </div>
+      <div className='ptit'>
+        Buy your  Amazing Product
+      </div>
       <Carousel  className='carousel' responsive={responsive}>
-        {ProductDate.map(items=>(
-       <div className='productslider' >
+        {ProductDate.map((items,i)=>(
+       <div className='productslider' key={i}>
         <div className='cardp'>
         <img className='product--image' src={items.img} alt=''/>
         <h1 className='tilp'>{items.name}</h1>
@@ -43,7 +46,7 @@ const ProductSlider = () => {
           <p className='pricep'>Price:{items.price1}</p>
           <p className='prip'>DESCRIPTION<br/>{items.description}</p>
           <p>
-            <button className='butp' onClick={handleClick}>Add To Card</button>
+            <button className='butp' onClick={()=>handleClick(items)}>Add To Card</button>
           </p>
           </div>
        </div>

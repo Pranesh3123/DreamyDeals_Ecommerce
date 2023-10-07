@@ -8,6 +8,18 @@ import Ipad from '../featuredproducts/Productsimages/color_back_green__buxxfjccq
 import Ipad1 from '../featuredproducts/Productsimages/color_front_green__eb8qbnemmre6_large_2x.jpeg'
 import Head from '../featuredproducts/Productsimages/ipadpro11-digitalmat-gallery-1-202210.png'
 import Head1 from '../featuredproducts/Productsimages/ipadpro11-digitalmat-gallery-3-202210.png'
+import Bag1 from '../featuredproducts/Productsimages/61vketKNnGL._UL1000_.jpeg'
+import Bag from '../featuredproducts/Productsimages/51iwjAm9P6L._UL1000_.jpeg'
+import Shoes from '../featuredproducts/Productsimages/71IAY--t6FL._UY695_.jpeg'
+import Shoes1 from '../featuredproducts/Productsimages/71p4xXqQExL._UY695_.jpeg'
+import TV from '../featuredproducts/Productsimages/l55m8-a2in-xiaomi-original-imagrzmzm3tvpaww.jpeg'
+import TV1 from '../featuredproducts/Productsimages/l50m8-a2in-xiaomi-original-imagrzmzg2kvdbef.jpeg'
+import EV from '../featuredproducts/Productsimages/-original-imagg3v3qcfpkcnu.jpeg';
+import EV1 from '../featuredproducts/Productsimages/-original-imagg3v3v5sskvhf.jpeg'
+import Airpods from '../featuredproducts/Productsimages/61YCXQGqVEL._SX679_.jpeg'
+import Aripods1 from '../featuredproducts/Productsimages/61nBzZ6gPxL._SX679_.jpeg'
+import Phone from '../featuredproducts/Productsimages/61VfL-aiToL._SX679_.jpeg'
+import Phone1 from '../featuredproducts/Productsimages/71Q7QmC1X1L._SX679_.jpeg'
 import {images} from '../featuredproducts/Productsimages/Prouctimg'
 import Card from '../card/Card'
 const List = () => {
@@ -48,6 +60,60 @@ const List = () => {
             isNew:true,
             OldPrice:" MRP:27,900",
             price:" OFFER:25,000",
+        },
+        {
+            id:5,
+            img:Bag,
+            img1:Bag1,
+            title:"BANGE BACKPACK",
+            isNew:true,
+            OldPrice:" MRP:₹6,999",
+            price:" OFFER:₹3,799",
+        },
+        {
+            id:6,
+            img:Shoes,
+            img1:Shoes1,
+            title:"AVANT SHOES",
+            isNew:true,
+            OldPrice:" MRP:₹1,799",
+            price:" OFFER:₹1,000",
+        },
+        {
+            id:7,
+            img:TV,
+            img1:TV1,
+            title:"MI X SERIES",
+            isNew:true,
+            OldPrice:" MRP:₹54,999",
+            price:" OFFER:₹36,999",
+        },
+        {
+            id:8,
+            img:EV,
+            img1:EV1,
+            title:"WALTX SPARK 5 V2",
+            isNew:true,
+            OldPrice:" MRP:₹44,,731",
+            price:" OFFER:₹35,004",
+        },
+        {
+            id:9,
+            img:Airpods,
+            img1:Aripods1,
+            title:"VIVO TWS AIR",
+            isNew:true,
+            OldPrice:" MRP:₹3,999",
+            price:" OFFER:₹2,999",
+        },
+        {
+            id:10,
+            img:Phone,
+            img1:Phone1,
+            title:"SAMSUNG S23 ULTRA",
+            isNew:true,
+            OldPrice:" MRP:₹1,61,999",
+            price:" OFFER:₹1,34,999",
         },
     ];
   return (
