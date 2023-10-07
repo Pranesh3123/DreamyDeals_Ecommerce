@@ -9,6 +9,8 @@ import Navbar from '../Navbar'
 import Contact from '../contact/Contact'
 import Footer from '../footer/Footer'
 import { useEffect } from 'react'
+import '../productslider/ProductDate'
+import ProductDate from '../productslider/ProductDate'
 const Products = () => {
     const [selectedimg,setSelectedimg]=useState(0)
     const [quantity,setQuantity]=useState(1);
@@ -20,6 +22,7 @@ const Products = () => {
   return (
     <div className='product'>
       <Navbar/>
+      {ProductDate.map(items=>(
     <div className='products'>
         <div className='pleft'>
             <div className='pimag'>
@@ -65,6 +68,7 @@ const Products = () => {
             </div>
         </div>
     </div>
+    ))}
     <Contact/>
     <Footer/>
   </div>  
