@@ -8,6 +8,7 @@ import Alexa from './homeimage/amazon-echo-dot-5th-gen-alexa-smart-speaker.jpeg'
 import Pc from './homeimage/7244f566923b4bc0844074b064085868.jpeg';
 import Gcard from './homeimage/437f84eef0e1526276905b9ab35f3185.jpeg';
 import Pstat from './homeimage/8970_04_everything-know-sonys-next-gen-playstation-5.jpeg';
+import TV from '../Categories/Categoriesimg/4299128d-1d39-445b-be7e-46cdf76b9efb-1.jpeg'
 import './Imagepass.css';
 const Imagepass = () => {
     const data = [Headphone, Phone, Tv, Shoes,Pc,Alexa];
@@ -42,8 +43,11 @@ const Imagepass = () => {
                 <img className='rightimg' src={Smartwatch} alt='watch'></img>
             </div>
             <div className='rightdown'>
-                <img   src={Gcard} alt='graphics'></img>
-                <img   src={Pstat} alt='accessories'></img>
+                <img src={Gcard} alt='graphics'></img>
+                <img src={Pstat} alt='accessories'></img>
+            </div>
+            <div className='rightdown1'>
+                <img src={TV} alt='Tv'></img>
             </div>
          </div>
     );

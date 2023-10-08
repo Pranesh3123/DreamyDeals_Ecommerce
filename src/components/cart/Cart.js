@@ -16,7 +16,7 @@ const Cart = () => {
     );
   }
   let total=0;
-  data.map(item=>{console.log(item)});
+  data.map(item=>{total+=item.total});
 //{
 //     "id": 1,
 //     "img": "/static/media/814BlZvtcnL._SX679_.8d2853329237ff165a62.jpeg",
@@ -47,7 +47,9 @@ const Cart = () => {
         </span>
       </div>
       <button className='cbut'>PROCEED TO CHECKOUT</button><br />
-      <button className='rest'>Reset Card</button>
+      <button className='rest' onClick={()=>{
+        dispatch(actions.clearItems());
+      }}>Reset Card</button>
     </div>
   );
 }

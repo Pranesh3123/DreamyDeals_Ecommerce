@@ -1,5 +1,6 @@
 .categories {
-  margin-top: 50%;
+  position: relative;
+  margin-top: 75%;
   margin-left: 5%;
   display: flex;
   justify-content: space-between;

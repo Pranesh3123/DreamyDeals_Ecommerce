@@ -8,10 +8,11 @@ import Ev from './Categoriesimg/the-weel-ev-b-is-a-self-driving-ev-cosplaying-as
 import TV from './Categoriesimg/4299128d-1d39-445b-be7e-46cdf76b9efb-1.jpeg'
 import './Categories.css';
 import { useNavigate } from 'react-router-dom'
+import { mobile } from './productsdata/product';
 export const Categories = () => {
   const navigate = useNavigate();
-  const handleClick =()=>{
-    navigate('/productcategories');
+  const handleClick =(item)=>{
+    navigate('/productcategories',{state:{items:item}});
   };
   return (
     <div className='categories' id='Product'>
@@ -23,7 +24,7 @@ export const Categories = () => {
         <p className='titlep'>Watch</p>
         <div className='overlay'></div>
         <div className='cbtn'>
-          <button className='cbt' onClick={() => handleClick('Watch')}>Explore</button>
+          <button className='cbt' onClick={() => handleClick(mobile)}>Explore</button>
         </div>
       </div>
       <div className='row'>
@@ -31,7 +32,7 @@ export const Categories = () => {
         <p className='titlep'>Shoes</p>
         <div className='overlay'></div>
         <div className='cbtn'>
-          <button className='cbt' onClick={() => handleClick('Shoes')}>Explore</button>
+          <button className='cbt' onClick={() => handleClick(mobile)}>Explore</button>
         </div>
       </div>
     </div>
@@ -41,7 +42,7 @@ export const Categories = () => {
         <p className='titlep'>Phones</p>
         <div className='overlay'></div>
         <div className='cbtn'>
-          <button className='cbt' onClick={() => handleClick('Phones')}>Explore</button>
+          <button className='cbt' onClick={() => handleClick(mobile)}>Explore</button>
         </div>
       </div>
       <div className='row'>

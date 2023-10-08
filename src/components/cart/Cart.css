@@ -29,8 +29,7 @@
 .pname{
     display: table-row;
     align-items: center;
-    justify-content: space-between;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .cimg{
@@ -50,7 +49,7 @@
 .cprice{
     color: blue;
     font-size: 14px;
-    margin-top: 120px;
+    margin-top: 150px;
     padding-right: 30px;
 }
 
@@ -58,7 +57,7 @@
     position: absolute;
     cursor: pointer;
     width: 23px;
-    padding-top: 150px;
+    padding-top: 200px;
     margin-left: 300px;
 }
 

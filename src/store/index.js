@@ -15,6 +15,10 @@ const cartSlice=createSlice({
         deleteItems(state,action) {
             state.items.splice(action.payload,1);
             state.count-=1
+        },
+        clearItems(state,action){
+            state.items=[];
+            state.count=0;
         }
     }
 });

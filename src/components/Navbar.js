@@ -28,14 +28,15 @@ const Navbar = () => {
   useEffect(()=>{
     window.scrollTo(0,0);
   })
+  
   return (
     <div className="nav-container">
       <img  className='flag' src={Flag} alt='flag'/>
       <p className='flag1'>IND</p>
           <div className='nleft'>
-           <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>MOBILE</Link>
-           <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>WATCH</Link>
-           <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>CAMERA</Link>
+           <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>Mobile</Link>
+           <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>Watch</Link>
+           <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>Camera</Link>
            <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>TWS</Link>
            <Link className='op' to='Product'spy={true} smooth={true} offset={100} duration={500}>EV</Link>
           </div>

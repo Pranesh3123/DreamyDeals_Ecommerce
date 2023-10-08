@@ -46,7 +46,7 @@ const ProductSlider = () => {
           <p className='pricep'>Price:{items.price1}</p>
           <p className='prip'>DESCRIPTION<br/>{items.description}</p>
           <p>
-            <button className='butp' onClick={()=>handleClick(items)}>Add To Card</button>
+            <button className='butp' onClick={()=>handleClick(items)}>View Product</button>
           </p>
           </div>
        </div>

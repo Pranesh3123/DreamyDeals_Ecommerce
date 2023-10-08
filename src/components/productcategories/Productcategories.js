@@ -1,17 +1,18 @@
 import React from 'react'
 import './Productcategories.css'
 import Happ from './productcategoriesimg/65667746c8d6bab69017f26cb6202df7 (1).jpeg'
-import List from '../list/List'
 import { useState } from 'react'
-import { useParams } from 'react-router-dom'
 import Navbar from '../Navbar'
 import Footer from '../footer/Footer'
 import Contact from '../contact/Contact'
-
+import Card from '../card/Card';
+import { useLocation } from 'react-router-dom'
 const Productcategories = () => {
-    const catId=parseInt(useParams().id)
+    const location=useLocation();
+    const data=location.state.items;
     const [maxPrice,setMaxPrice]=useState(1000)
     const [sort,setSort]=useState(null)
+    
   return (
 <div className='product'>
     <Navbar/>
@@ -76,7 +77,11 @@ const Productcategories = () => {
             <img className='catimg' src={Happ} alt='Happ'></img>
             <div className='container'>
             </div>    
-            <List  catId={catId} maxPrice={maxPrice} sort={sort}/>
+            <div className='list'>
+                {data.map(item =>(
+                    <Card item={item} key={item.id}/>   
+                ))}
+            </div>
         </div>
     </div>
     <Contact/>

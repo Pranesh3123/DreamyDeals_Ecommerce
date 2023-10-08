@@ -33,13 +33,21 @@
   }
 
   .rightdown{
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    bottom: 295px;
-    left: 886px;
+    gap: 8px;
+    top: 195px;
+    left: 70.2%;
     width: 255px;
-    height: 295px;
+    height: 182px;
+  }
+
+  .rightdown1{
+    position: absolute;
+    top: 380px;
+    left: 70.2%;
+    width: 525px;
+    height: 200px;
   }
  

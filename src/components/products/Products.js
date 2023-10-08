@@ -20,13 +20,14 @@ const Products = () => {
   const [quantity,setQuantity]=useState(1);
   const dispatch = useDispatch();
   const items = location.state.items;
+  console.log(items);
   const ar =Object.keys(items);
   const images = [items[ar[1]],items[ar[2]]];
   const handleClick=()=>{
     delete items.img1;
     delete items.price;
-    const amount=parseInt(items.price1.substring(1).replace(/ /g,));
-    console.log(amount);
+    
+    const amount=parseInt(items.price1.substring(1).replace(",",''));
     const cartItem={...items,cnt:quantity,total:amount*quantity};
     dispatch(actions.addItem(cartItem));
   }
