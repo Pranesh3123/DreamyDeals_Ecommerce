@@ -16,6 +16,15 @@
     z-index: 5;
 }
 
+.search-bar {
+    border: none;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    outline: none;
+  }
+
 .flag{
     max-width: 25px;
     margin-left: 10px;
@@ -79,12 +88,13 @@
 
 .count{
     display: flex;
+    left: 97.5%;
 }
 
 .light{
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     color: aliceblue;
 }
 
@@ -99,7 +109,7 @@
   
 .count{
     position: absolute;
-    right: 35px;
+    left: 98.8%;
     top: 10px;
     font-size: 14px;
     background-color: red;

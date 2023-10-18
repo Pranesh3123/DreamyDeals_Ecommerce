@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { UseSelector, useSelector } from 'react-redux';
+import {   useSelector } from 'react-redux';
 import Flag from '../image/india-61-692112.png'
 import Carts from '../image/cart (1).svg'
 import User from '../image/user.svg'
@@ -10,6 +10,7 @@ import { useNavigate } from 'react-router'
 import Cart from './cart/Cart'
 import './Navbar.css'
 import { useEffect } from 'react'
+import Search  from './search/Search'
 
 const Navbar = () => {
 
@@ -22,7 +23,7 @@ const Navbar = () => {
   }
   const homenavigate=useNavigate();
   const handleClick=()=>{
-    homenavigate('/');
+    homenavigate('/Home');
   }
 
   useEffect(()=>{
@@ -34,19 +35,20 @@ const Navbar = () => {
       <img  className='flag' src={Flag} alt='flag'/>
       <p className='flag1'>IND</p>
           <div className='nleft'>
-           <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>Mobile</Link>
+           {/* <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>Mobile</Link>
            <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>Watch</Link>
            <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>Camera</Link>
            <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>TWS</Link>
-           <Link className='op' to='Product'spy={true} smooth={true} offset={100} duration={500}>EV</Link>
+           <Link className='op' to='Product'spy={true} smooth={true} offset={100} duration={500}>EV</Link> */}
+            <Link className='op' to='/Home' onClick={handleClick}>Home</Link>
+            <Link className='op' to='Footer'spy={true} smooth={true} offset={50} duration={500}>About</Link>
+            <Link className='op' to='Contact' spy={true} smooth={true} offset={-50} duration={500}>Contact</Link>
+            <Link className='op' to='Product' spy={true} smooth={true} offset={-50} duration={500}>Stores</Link>
           </div>
           <img className='logo' src={Logo} alt='logo'/>
         <div className="navbar">
             <div  className='light'>
-                <Link className='op' to='/' onClick={handleClick}>Home</Link>
-                <Link className='op' to='Footer'spy={true} smooth={true} offset={50} duration={500}>About</Link>
-                <Link className='op' to='Contact' spy={true} smooth={true} offset={-50} duration={500}>Contact</Link>
-                <Link className='op' to='cat' spy={true} smooth={true} offset={-50} duration={500}>Stores</Link>
+              <Search  className='op'/>
               <img  className='img' src={Fav} alt='fav'/>
               <img  className='img'  src={User} alt='User'/>
               <div className='carticon' onClick={togglecart}>

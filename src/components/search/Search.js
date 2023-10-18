@@ -1,12 +1,13 @@
 import React from 'react'
-import Searchicon from './../image/search.svg';
+import {FcSearch} from 'react-icons/fc'
+import './Search.css'
 
 const Search = () => {
   return (
     <div className='search-bar'>
         <input  className='stxt' type='text' placeholder='search'/>
         <button className='sbut'>
-        <img  className='icon' src={Searchicon} alt='icon'/>
+        <FcSearch className='icon'/>
         </button>
     </div>
   )

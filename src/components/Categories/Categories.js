@@ -11,8 +11,8 @@ import { useNavigate } from 'react-router-dom'
 import { mobile } from './productsdata/product';
 export const Categories = () => {
   const navigate = useNavigate();
-  const handleClick =(item)=>{
-    navigate('/productcategories',{state:{items:item}});
+  const handleClick =(mobile)=>{
+    navigate('/productcategories',{state:{items:mobile}});
   };
   return (
     <div className='categories' id='Product'>
@@ -50,7 +50,7 @@ export const Categories = () => {
         <p className='titlep'>Camera</p>
         <div className='overlay'></div>
         <div className='cbtn'>
-          <button className='cbt' onClick={() => handleClick('Camera')}>Explore</button>
+          <button className='cbt' onClick={() => handleClick(mobile)}>Explore</button>
         </div>
       </div>
       <div className='row'>
@@ -58,7 +58,7 @@ export const Categories = () => {
         <p className='titlep'>TV</p>
         <div className='overlay'></div>
         <div className='cbtn'>
-          <button className='cbt' onClick={() => handleClick('TV')}>Explore</button>
+          <button className='cbt' onClick={() => handleClick(mobile)}>Explore</button>
         </div>
       </div>
     </div>
@@ -68,7 +68,7 @@ export const Categories = () => {
         <p className='titlep'>TWS</p>
         <div className='overlay'></div>
         <div className='cbtn'>
-          <button className='cbt' onClick={() => handleClick('TWS')}>Explore</button>
+          <button className='cbt' onClick={() => handleClick(mobile)}>Explore</button>
         </div>
       </div>
       <div className='row'>
@@ -76,7 +76,7 @@ export const Categories = () => {
         <p className='titlep'>EV</p>
         <div className='overlay'></div>
         <div className='cbtn'>
-          <button className='cbt' onClick={() => handleClick('EV')}>Explore</button>
+          <button className='cbt' onClick={() => handleClick(mobile)}>Explore</button>
         </div>
       </div>
     </div>

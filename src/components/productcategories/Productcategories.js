@@ -10,8 +10,8 @@ import { useLocation } from 'react-router-dom'
 const Productcategories = () => {
     const location=useLocation();
     const data=location.state.items;
-    const [maxPrice,setMaxPrice]=useState(1000)
-    const [sort,setSort]=useState(null)
+    const [maxPrice,setMaxPrice]=useState(1000);
+    const [sort,setSort]=useState(null);
     
   return (
 <div className='product'>
