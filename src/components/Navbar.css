@@ -80,13 +80,9 @@
 
 .img{
      width: 25px;
-     height: 50%;
+     height: auto;
 }
 
-.count{
-    display: flex;
-    left: 97.5%;
-}
 
 .light{
     display: flex;
@@ -105,11 +101,11 @@
 .count {
     position: absolute;
     left: 98.5%;
-    top: 10%; /* Use a percentage for top to make it responsive to the viewport height */
-    font-size: 1vw; /* Use viewport width as a unit for font size */
+    top: 10%; 
+    font-size: 1vw; 
     background-color: red;
-    border-radius: 50%; /* Use a percentage for border-radius */
-    width: 1%; /* Use a percentage for width */
+    border-radius: 50%; 
+    width: 1%; 
     display: flex;
     justify-content: center;
 }
