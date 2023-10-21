@@ -13,7 +13,7 @@ const Card = ({ item }) => {
         <div className='image'>
           <img src={item.img} alt={item.name} className='firstimg' />
           <img src={item.img1} alt={item.name} className='secondimg' />
-          <button className='new' onClick={()=>handleClick(item)}>New Arrival</button>
+          <button className='new' onClick={()=>handleClick(item)}>Buy Now</button>
         </div>
         <h4>{item.name}</h4>
         <div className='price'>

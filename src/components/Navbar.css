@@ -71,14 +71,11 @@
 
 .navbar{
    width: 30%;
-   padding-right: 10px;
-}
-
-.navbar{
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     list-style: none;
+   padding-right: 1%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   list-style: none;
 }
 
 .img{
@@ -104,12 +101,10 @@
     box-shadow: black;
     color:whitesmoke;
 }
-
-
   
 .count{
     position: absolute;
-    left: 98.8%;
+    left: 98.5%;
     top: 10px;
     font-size: 14px;
     background-color: red;

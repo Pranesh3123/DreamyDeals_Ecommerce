@@ -3,16 +3,11 @@ import { useLocation } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { actions } from '../../store';
 import './Products.css'
-import Shoes from './Productsimg/71+KbSB0AGL._UY695_.jpeg'
-import Shoes1 from './Productsimg/71ZUFbHzXVL._UY695_.jpeg'
 import Addcard from './Productsimg/cart-outline.svg'
-import Wishlist from './Productsimg/heart-circle-outline.png'
-import Compare from './Productsimg/git-compare-outline.png'
 import Navbar from '../Navbar'
 import Contact from '../contact/Contact'
 import Footer from '../footer/Footer'
 import '../productslider/ProductDate'
-import ProductDate from '../productslider/ProductDate'
 
 const Products = () => {
   const location = useLocation();
@@ -22,7 +17,6 @@ const Products = () => {
   const items = location.state.items;
   console.log(items);
   const ar =Object.keys(items);
-  const images = [items[ar[1]],items[ar[2]]];
   const handleClick=()=>{
     delete items.img1;
     delete items.price;
@@ -40,8 +34,8 @@ const Products = () => {
     <div className='products' >
         <div className='pleft'>
             <div className='pimag'>
-              <img className='pimg1' src={items[ar[1]]} alt='shoes' onClick={()=>setPath(1)}/>
-              <img className='pimg1' src={items[ar[2]]} alt='shoes' onClick={()=>setPath(2)}/>
+              <img className='pimg1' src={items[ar[1]]} alt={items[ar[3]]} onClick={()=>setPath(1)}/>
+              <img className='pimg1' src={items[ar[2]]} alt={items[ar[3]]} onClick={()=>setPath(2)}/>
             </div> 
             <div className='mainimg'>
                 <img src={items[ar[path]]} alt=''/>
@@ -59,13 +53,8 @@ const Products = () => {
             <button className='add' onClick={()=>handleClick(items)}>
                 <img  className='add'src={Addcard} alt='add'/>ADD TO CART
             </button>
-            {/* <div className='link'>
-                <img src={Wishlist} alt='wishlist'/> ADD TO WISHLIST
-                <img src={Compare} alt='wishlist'/> ADD TO COMPARE
-            </div> */}
             <div className='info'>
-                <span>Vendor: AVANT</span>
-                <span>Product: Shoes</span>
+                <span>Product: {items[ar[3]]}</span>
                 <span>Tag: Men, Women</span>
                 <hr className='full'/>
             </div>
