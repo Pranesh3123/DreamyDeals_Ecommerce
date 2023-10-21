@@ -19,7 +19,7 @@ const Productcategories = () => {
     <div className='products'>
         <div className='left'>
             <div className='filteritem'>
-                <h2>Product Categories</h2>
+                <h2 className='ptitle'>Product Categories</h2>
                 <div className='inputitem'>
                     <input type='checkbox' id='1' value={1}/>
                     <label htmlFor='1'> Phone</label>
@@ -54,7 +54,7 @@ const Productcategories = () => {
                 </div>
             </div>
             <div className='filteritem'>
-                <h2>Filter by price</h2>
+                <h2 className='ptitle'> Filter by price</h2>
                 <div className='inputitems'>
                     <span>0</span>
                     <input type='range' min={0} max={1000} onChange={(e) => setMaxPrice(e.target.value)}/>
@@ -62,7 +62,7 @@ const Productcategories = () => {
                 </div>
             </div>
             <div className='filteritem'>
-               <h2>Sort by</h2>
+               <h2 className='ptitle'>Sort by</h2>
                <div className='inputitem'>
                 <input type='radio' id='asc' value='asc' name='price' onChange={e => setSort("asc")}/> 
                 <label htmlFor='asc'> LowPrice</label>
