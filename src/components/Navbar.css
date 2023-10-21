@@ -102,17 +102,18 @@
     color:whitesmoke;
 }
   
-.count{
+.count {
     position: absolute;
     left: 98.5%;
-    top: 10px;
-    font-size: 14px;
+    top: 10%; /* Use a percentage for top to make it responsive to the viewport height */
+    font-size: 1vw; /* Use viewport width as a unit for font size */
     background-color: red;
-    border-radius: 25px;
-    width: 15px;
+    border-radius: 50%; /* Use a percentage for border-radius */
+    width: 1%; /* Use a percentage for width */
     display: flex;
     justify-content: center;
 }
+
   
   
   

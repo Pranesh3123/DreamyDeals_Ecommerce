@@ -34,8 +34,8 @@ const Products = () => {
     <div className='products' >
         <div className='pleft'>
             <div className='pimag'>
-              <img className='pimg1' src={items[ar[1]]} alt={items[ar[3]]} onClick={()=>setPath(1)}/>
-              <img className='pimg1' src={items[ar[2]]} alt={items[ar[3]]} onClick={()=>setPath(2)}/>
+              <img className='pimg1' src={items[ar[1]]} alt={items[ar[1]]} onClick={()=>setPath(1)}/>
+              <img className='pimg1' src={items[ar[2]]} alt={items[ar[2]]} onClick={()=>setPath(2)}/>
             </div> 
             <div className='mainimg'>
                 <img src={items[ar[path]]} alt=''/>
