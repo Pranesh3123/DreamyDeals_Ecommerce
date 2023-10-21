@@ -139,3 +139,10 @@ input:valid ~ label{
     position: absolute;
     color: red;
 }
+
+.llogo{
+    width: 60%;
+    height: 100%;
+    padding-right: 20%;
+
+}

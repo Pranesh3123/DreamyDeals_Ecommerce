@@ -35,11 +35,6 @@ const Navbar = () => {
       <img  className='flag' src={Flag} alt='flag'/>
       <p className='flag1'>IND</p>
           <div className='nleft'>
-           {/* <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>Mobile</Link>
-           <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>Watch</Link>
-           <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>Camera</Link>
-           <Link className='op' to='Product'spy={true} smooth={true} offset={-50} duration={500}>TWS</Link>
-           <Link className='op' to='Product'spy={true} smooth={true} offset={100} duration={500}>EV</Link> */}
             <Link className='op' to='/Home' onClick={handleClick}>Home</Link>
             <Link className='op' to='Footer'spy={true} smooth={true} offset={50} duration={500}>About</Link>
             <Link className='op' to='Contact' spy={true} smooth={true} offset={-50} duration={500}>Contact</Link>

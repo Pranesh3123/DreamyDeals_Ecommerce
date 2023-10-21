@@ -4,6 +4,7 @@ import { RiLockPasswordLine } from 'react-icons/ri';
 import { Link, useNavigate } from 'react-router-dom';
 // import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react';
+import logo from './Dreamydeals-logos_white.png'
 
 const Login = () => {
   const navigate = useNavigate();
@@ -16,9 +17,24 @@ const Login = () => {
   const [alertMessage,setAlertMessage]=useState("");
 
   const handleClickHome = () =>{
-    var a= document.getElementById("email").value;
-    var b= document.getElementById("password").value;
-    if(a.length===0 || b.length===0){
+    var email= document.getElementById("email").value;
+    var pass= document.getElementById("password").value;
+    if(email.length===0)
+    {
+      setAlertMessage('Enter valid Email')
+    }
+    if(!/^\S+@\S+\.\S+$/.test(email))
+    {
+      setAlertMessage('Email is not valid')
+    }
+    else if(pass.length===0)
+    {
+      setAlertMessage('Enter the password')
+    }
+    else if (pass.length < 6) {
+      setAlertMessage('Password must be at least 6 characters long');
+    }
+    else if(email.length===0 || pass.length===0){
       setAlertMessage("Please Check The Email ID or Password")
     }
     else{
@@ -40,6 +56,7 @@ const Login = () => {
 
   return (
     <div className='section'>
+      <img  className='llogo' src={logo} alt='logo'/>
       <div className="form-box">
         {/* <form onSubmit={signIn}> */}
           <div className="form-value">
